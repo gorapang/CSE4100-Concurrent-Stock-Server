@@ -1,25 +1,30 @@
-3. How to run
-compile
-
-$ make
-stockserver 실행
-
-$ ./stockserver [port number]
-stockclient 실행
-
-$ ./stockclient [server's IP address] [port number]
-multiclient 실행
-
-$ ./multiclient [server's IP address] [port number] [# of clients]
+task 1: Event-driven approach
+task 2: Thread-driven approach
 
 
+### Run
+- compile
+`$ make`
 
-4. Allowed Commands
-주식 내역 보기 (주식 테이블 출력)
->> show
-주식 주문하기
->> buy [stock ID] [# of stocks]
-주식 판매하기
->> sell [stock ID] [# of stocks]
-주식장 나가기 (클라이언트 접속 종료)
->> exit
+- stockserver
+	`$ ./stockserver [port number]`
+    
+- stockclient
+`$ ./stockclient [server's IP address] [port number]`
+
+- multiclient
+`$ ./multiclient [server's IP address] [port number] [# of clients]`
+
+
+### Client Commands
+1. `show`
+현재 주식의 상태를 보여준다.
+
+2. `buy [stock ID] [# of stocks]`
+주식 구매
+
+3. `sell [stock ID] [# of stocks]`
+주식 판매
+
+4. `exit`
+disconnection with server(주식 장 퇴장)
