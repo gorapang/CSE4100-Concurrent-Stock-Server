@@ -1,8 +1,14 @@
-task 1: Event-driven approach
 
 
-task 2: Thread-based approach
+  
+Task 1: Event-driven approach
+- select() 함수를 통한 I/O Multiplexing
 
+Task 2: Thread-based approach
+- POSIX thread를 활용하여 멀티스레드를 통한 동시성 구현
+- 세마포어, 뮤텍스를 활용한 멀티스레드 동기화 메커니즘 구현
+
+공통사항: 소켓 프로그래밍을 활용한 서버-클라이언트 통신 구현
 
 ### Run
 - compile
